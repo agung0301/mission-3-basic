@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <img src="img/bg.jpg" alt="background" class="background">
-    
+    <div class="bg">
+        <div class="box-login">
+            <div class="logo-chill">
+            <img src="img/logo/Logo.png" alt="CHILL-Logo">
+            </div>
+            <div class="wellcome-text">
+            <h2>LOGIN</h2>
+            <p>Selamat datang kembali</p>
+            </div>
+            <form>
+                <div class="username">
+                <Label for="username">Username</Label> <br>
+                <input type="text" placeholder="Username" id="username" required> <br>
+                </div>
+                <div class="password">
+                <Label for="password">Password</Label> <br>
+                <input type="password" placeholder="Password" id="password" required><br>
+                <p>Belum Punya Akun? <a href="regist.html">Daftar</a></p>
+                <p><a href="#">Lupa password</a></p>
+                </div>
+                <button type="submit">LOGIN</button><br>
+                atau
+                <br>
+                <button type="button" class="google-login">
+                    <img src="img/logo/google.png" alt="Google-Logo" width="20px">
+                    <span>Login dengan Google</span>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
