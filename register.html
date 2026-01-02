@@ -3,10 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daftar | CHILL</title>
+    <link rel="icon" href="img/logo/movie-open.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+<div class="bg-register">
+    <div class="box-login">
+
+        <!-- Logo -->
+        <div class="logo-chill">
+            <img class="imglogo" src="img/logo/Logo.png" alt="CHILL Logo">
+        </div>
+
+        <!-- Heading -->
+        <div class="welcome-text">
+            <h2>DAFTAR</h2>
+            <p>Selamat datang!</p>
+        </div>
+
+        <!-- Form -->
+        <form>
+
+            <!-- Username -->
+            <div class="username">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"
+                    required
+                >
+            </div>
+
+            <!-- Password -->
+            <div class="password">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <label for="confirm-password">Konfirmasi Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm_password"
+                    placeholder="Konfirmasi Password"
+                    required
+                >
+            </div>
+
+            <!-- Options -->
+            <div class="options">
+                <p style="color: gray;">
+                    Sudah Punya Akun?
+                    <a href="login.html">Login</a>
+                </p>
+            </div>
+
+            <!-- Submit -->
+            <div class="submit">
+                <button class="login" type="submit">DAFTAR</button>
+
+                <p>atau</p>
+
+                <button type="button" class="google-login">
+                    <img src="img/logo/google.png" alt="Google Logo" width="15">
+                    <span>Daftar dengan Google</span>
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
 </body>
 </html>
