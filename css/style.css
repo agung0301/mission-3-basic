@@ -12,7 +12,6 @@ html, body {
     overflow: hidden;
 }
 
-/* Background */
 .bg-login,
 .bg-register {
     width: 100%;
@@ -30,7 +29,6 @@ html, body {
     background-image: url("../img/bg2.jpg");
 }
 
-/* Auth Box */
 .box-login {
     width: 90%;
     max-width: 500px;
@@ -45,7 +43,6 @@ html, body {
     backdrop-filter: blur(10px);
 }
 
-/* Inputs */
 input {
     width: 100%;
     padding: 10px;
@@ -56,7 +53,6 @@ input {
     color: #fff;
 }
 
-/* Buttons */
 .login,
 .google-login {
     width: 100%;
@@ -97,7 +93,6 @@ input {
 }
 
 
-/* Text & alignment */
 .imglogo,
 .welcome-text,
 .submit {
@@ -115,7 +110,6 @@ a:hover {
     opacity: 0.7;
 }
 
-/* Options row */
 .options {
     display: flex;
     justify-content: space-between;
@@ -123,7 +117,6 @@ a:hover {
     font-size: 14px;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
     .box-login {
         padding: 24px;
