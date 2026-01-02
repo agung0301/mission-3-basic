@@ -11,9 +11,9 @@
     <div class="bg">
         <div class="box-login">
             <div class="logo-chill">
-            <img src="img/logo/Logo.png" alt="CHILL-Logo">
+            <img class="imglogo" src="img/logo/Logo.png" alt="CHILL-Logo">
             </div>
-            <div class="wellcome-text">
+            <div class="welcome-text">
             <h2>LOGIN</h2>
             <p>Selamat datang kembali</p>
             </div>
@@ -25,15 +25,20 @@
                 <div class="password">
                 <Label for="password">Password</Label> <br>
                 <input type="password" placeholder="Password" id="password" required><br>
-                <p>Belum Punya Akun? <a href="regist.html">Daftar</a></p>
-                <p><a href="#">Lupa password</a></p>
                 </div>
-                <button type="submit">LOGIN</button><br>
+                <div class="options">           
+                <p style="color: gray;">Belum Punya Akun? <a href="register.html">Daftar</a></p>
+                <p><a href="#">Lupa password?</a></p>
+                </div>
+                <div class="submit">
+                <button class="login" type="submit">LOGIN</button><br>
                 atau
                 <br>
                 <button type="button" class="google-login">
                     <img src="img/logo/google.png" alt="Google-Logo" width="20px">
                     <span>Login dengan Google</span>
+                    </button>
+                </div>
             </form>
         </div>
     </div>

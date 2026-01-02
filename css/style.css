@@ -20,8 +20,8 @@ html, body {
 }
 .box-login {
     width: 90%;
-    max-width: 400px;
-    padding: 40px;
+    max-width: 500px;
+    padding: 48px;
 
     position: absolute;
     top: 50%;
@@ -29,8 +29,75 @@ html, body {
     transform: translate(-50%, -50%);
 
     background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px); 
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
 }
 
+
+.login{
+    background: #E7E3FC3B;
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.imglogo, .welcome-text, .submit {
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.google-login{
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color : #fff;
+}
+input {
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+.options {
+    display: flex;
+     justify-content: space-between; 
+     padding: 10px 10px;
+     text-decoration: none;
+}
+@media (max-width: 480px) {
+    .box-login {
+        padding: 24px;
+        max-width: 95%;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login,
+    .google-login {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .options {
+        font-size: 13px;
+        padding: 6px 0;
+    }
+}
