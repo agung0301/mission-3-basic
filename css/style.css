@@ -396,6 +396,166 @@ a {
     border-radius: 4px;
     z-index: 6;
 }
+
+.top-rating-card {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    flex-shrink: 0;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.rating-number {
+    font-size: 100px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.5); /* Garis tepi angka */
+    line-height: 1;
+    margin-right: -20px;
+    z-index: 1;
+}
+
+.portrait-thumb {
+    width: 160px;
+    aspect-ratio: 2 / 3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2; /* Di atas angka */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.portrait-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top-rating-card:hover {
+    transform: scale(1.05);
+    z-index: 100;
+}
+
+.top-rating-card:hover .rating-number {
+    -webkit-text-stroke: 2px #fff;
+}
+
+.movie-card-portrait {
+    min-width: 180px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card-portrait:hover {
+    transform: scale(1.1);
+    z-index: 50;
+}
+
+.portrait-thumb {
+    width: 100%;
+    aspect-ratio: 2 / 3; 
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #333;
+}
+
+.portrait-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-top-9 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: #FF0000;
+    color: white;
+    padding: 4px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    line-height: 1;
+}
+.progress-track {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #E50914; 
+}
+.footer-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #181818 !important;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.footer-links li a {
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ffffff;
+}
+
+.footer-section h6 {
+    font-size: 16px;
+    color: #ffffff;
+}
+.footer-links.double-column {
+    display: block;
+    column-count: 2;
+    column-gap: 20px;
+    width: 100%;
+}
+.footer-links.double-column li {
+    break-inside: avoid;
+    margin-bottom: 8px;
+}
+details ul.double-column {
+    margin-top: 10px;
+}
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary i {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.footer-dropdown ul {
+    padding-left: 0;
+}
+
+.footer-dropdown li {
+    padding: 8px 0;
+}
 @media (max-width: 480px) {
   .box-login {
     padding: 24px;

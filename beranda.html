@@ -11,181 +11,396 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-  <head>
+</head>
 
-  <body>
-    <nav class="navbar bg-dark" data-bs-theme="dark">
-      <div class="container-fluid d-flex align-items-center">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="img/logo/movie-open.png" alt="logo-movie-open" width="40">
-          <img src="img/logo/CHILL.png" alt="logo-chill" width="90" class="ms-2 d-none d-md-inline">
+<body>
+  <nav class="navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo/movie-open.png" alt="logo-movie-open" width="40">
+        <img src="img/logo/CHILL.png" alt="logo-chill" width="90" class="ms-2 d-none d-md-inline">
+      </a>
+      <ul class="navbar-nav flex-row me-auto">
+        <li class="nav-item"><a class="nav-link px-2">Series</a></li>
+        <li class="nav-item"><a class="nav-link px-2">Film</a></li>
+        <li class="nav-item"><a class="nav-link px-2">Daftar-saya</a></li>
+      </ul>
+      <div class="profile-dropdown ms-auto">
+        <a class="profile-trigger" tabindex="0">
+          <img src="img/logo/avatar.png" alt="avatar" width="36" class="rounded-circle">
+          <span class="caret">▾</span>
         </a>
-        <ul class="navbar-nav flex-row me-auto">
-          <li class="nav-item"><a class="nav-link px-2">Series</a></li>
-          <li class="nav-item"><a class="nav-link px-2">Film</a></li>
-          <li class="nav-item"><a class="nav-link px-2">Daftar-saya</a></li>
+
+        <ul class="profile-menu">
+          <li><a href="#" class="active">Profil Saya</a></li>
+          <li><a href="#">Ubah Premium</a></li>
+          <li class="divider"></li>
+          <li><a href="login.html">Logout</a></li>
         </ul>
-        <div class="profile-dropdown ms-auto">
-          <a class="profile-trigger" tabindex="0">
-            <img src="img/logo/avatar.png" alt="avatar" width="36" class="rounded-circle">
-            <span class="caret">▾</span>
-          </a>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1 class="hero-title">Dilan 1991</h1>
+          <p class="hero-desc">
+            Hubungan Dilan dan Milea berakhir karena Dilan menolak berhenti dari dunia geng motor meskipun telah
+            diancam putus oleh Milea demi keselamatannya.
+          </p>
 
-          <ul class="profile-menu">
-            <li><a href="#" class="active">Profil Saya</a></li>
-            <li><a href="#">Ubah Premium</a></li>
-            <li class="divider"></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
+          <div class="d-flex align-items-center gap-2 mt-4 flex-row flex-nowrap w-100">
+            <a class="btn btn-light px-3 py-1">
+              <i class="bi bi-play-fill me-1"></i> Play
+            </a>
+            <a class="btn btn-outline-light px-3 py-1 fw-semibold border-2">
+              <i class="bi bi-info-circle me-1"></i> Selengkapnya
+            </a>
+
+            <span class="age-rating">18+</span>
+
+            <button class="volume-btn ms-auto">
+              <i class="bi bi-volume-up"></i>
+            </button>
+          </div>
+
         </div>
       </div>
-    </nav>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <h1 class="hero-title">Dilan 1991</h1>
-            <p class="hero-desc">
-              Hubungan Dilan dan Milea berakhir karena Dilan menolak berhenti dari dunia geng motor meskipun telah
-              diancam putus oleh Milea demi keselamatannya.
-            </p>
+    </div>
+  </section>
+  <section class="continue-watch content-section mt-5 px-4">
+    <h5 class="fw-bold mb-3">Melanjutkan Tonton Film</h5>
 
-            <div class="d-flex align-items-center gap-2 mt-4 flex-row flex-nowrap w-100">
-              <a class="btn btn-light px-3 py-1">
-                <i class="bi bi-play-fill me-1"></i> Play
-              </a>
-              <a class="btn btn-outline-light px-3 py-1 fw-semibold border-2">
-                <i class="bi bi-info-circle me-1"></i> Selengkapnya
-              </a>
+    <div class="movie-rail">
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=4.png" alt="Fast X">
+          <div class="card-info">
+            <p class="movie-title">Fast X</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 2.9/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width:  60%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=24.png" alt="Spiderman-across the spider-verse">
+          <div class="card-info">
+            <p class="movie-title">Spiderman across the spider-verse</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 4.4/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=5.png" alt="Blue Lock">
+          <span class="badge-episode">Episode Baru</span>
+          <div class="card-info">
+            <p class="movie-title">Blue Lock</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 3.7/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=16.png" alt="Guardians of the Galaxy">
+          <div class="card-info">
+            <p class="movie-title">Guardians of the Galaxy</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 4.0/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=3.png" alt="Avatar the  way of water">
+          <div class="card-info">
+            <p class="movie-title">Avatar the way of water</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 3.8/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 60%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=21.png" alt="Jurassic World Dominion">
+          <div class="card-info">
+            <p class="movie-title">Jurassic World Dominion</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 2.8/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=23.png" alt="Sonic 2 the hedgehog">
+          <div class="card-info">
+            <p class="movie-title">Sonic 2 the hedgehog</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 3.5/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="movie-card">
+        <div class="card-thumb">
+          <img src="img/poster/landscape/Type=7.png" alt="the tomorrow war">
+          <div class="card-info">
+            <p class="movie-title">The Tomorrow War</p>
+            <div class="movie-rating">
+              <i class="bi bi-star-fill text-warning"></i> 3.2/5
+            </div>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 30%;"></div>
+          </div>
+        </div>
+  </section>
+  <section class="top-rating content-section mt-5 px-4">
+    <h5 class="fw-bold mb-3">Top Rating Film dan Series Hari ini</h5>
+    <div class="movie-rail">
 
-              <span class="age-rating">18+</span>
+      <div class="top-rating-card">
+        <span class="rating-number">1</span>
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=14.png" alt="Suzume">
+          <span class="badge-episode">Episode Baru</span>
+        </div>
+      </div>
 
-              <button class="volume-btn ms-auto">
-                <i class="bi bi-volume-up"></i>
-              </button>
+      <div class="top-rating-card">
+        <span class="rating-number">2</span>
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=10.png" alt="A Man Called Otto">
+        </div>
+      </div>
+
+      <div class="top-rating-card">
+        <span class="rating-number">3</span>
+        <div class="portrait-thumb">
+          <span class="badge-episode">Episode Baru</span>
+          <img src="img/poster/potrait/Number=9.png" alt="all of us are dead">
+        </div>
+      </div>
+      <div class="top-rating-card">
+        <span class="rating-number">4</span>
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=12.png" alt="Big Hero 6">
+        </div>
+      </div>
+      <div class="top-rating-card">
+        <span class="rating-number">5</span>
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=15.png" alt="Megan">
+        </div>
+      </div>
+
+      <div class="top-rating-card">
+        <span class="rating-number">6</span>
+        <div class="portrait-thumb">
+          <span class="badge-episode">Episode Baru</span>
+          <img src="img/poster/potrait/Number=33.png" alt="Money Heist">
+        </div>
+      </div>
+      <div class="top-rating-card">
+        <span class="rating-number">7</span>
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=19.png" alt="Doctor Strange in the Multiverse of Madness">
+        </div>
+      </div>
+      <div class="top-rating-card">
+        <span class="rating-number">8</span>
+        <div class="portrait-thumb">
+          <span class="badge-episode">Episode Baru</span>
+          <img src="img/poster/potrait/Number=23.png" alt="Ted Lasso">
+        </div>
+      </div>
+      <div class="top-rating-card">
+        <span class="rating-number">9</span>
+        <div class="portrait-thumb">
+          <span class="badge-episode">Episode Baru</span>
+          <img src="img/poster/potrait/Number=34.png" alt="Peaky Blinders">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="new-release content-section mt-5 px-4">
+    <h5 class="fw-bold mb-3">Rilis Baru</h5>
+    <div class="movie-rail">
+
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=23.png" alt="Ted Lasso">
+          <span class="badge-top-9">Top 9</span>
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=21.png" alt="Black Adam">
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=9.png" alt="all of us are dead">
+          <span class="badge-top-9">Top 9</span>
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=27.png" alt="Dilan 1991">
+        </div>
+      </div>
+
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=17.png" alt="Duty After School">
+          <span class="badge-episode">Episode Baru</span>
+        </div>
+      </div>
+
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=20.png" alt="Dont Look Up">
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=12.png" alt="Big Hero 6">
+          <span class="badge-top-9">Top 9</span>
+
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=8.png" alt="Batman">
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=5.png" alt="Blue Lock">
+          <span class="badge-episode">Episode Baru</span>
+        </div>
+      </div>
+      <div class="movie-card-portrait">
+        <div class="portrait-thumb">
+          <img src="img/poster/potrait/Number=10.png" alt="A Man Called Otto">
+          <span class="badge-top-9">Top 9</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer-section text-white pt-5 pb-4 mt-5">
+    <div class="container-fluid px-4">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="footer-logo mb-3 pt-5">
+            <img src="img/logo/Logo.png" alt="logo-chill" width="120">
+          </div>
+          <p class="text-secondary small">&copy;2026 Chill All Rights Reserved.</p>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+              <div class="d-none d-md-block">
+                <h6 class="fw-bold mb-3">Genre</h6>
+                <ul class="list-unstyled footer-links double-column">
+                  <li><a href="#">Aksi</a></li>
+                  <li><a href="#">Drama</a></li>
+                  <li><a href="#">Komedi</a></li>
+                  <li><a href="#">Petualangan</a></li>
+                  <li><a href="#">Sains & Fisika</a></li>
+                  <li><a href="#">Thriller</a></li>
+                  <li><a href="#">Romantis</a></li>
+                  <li><a href="#">Anime</a></li>
+                </ul>
+              </div>
+
+              <div class="d-md-none border-bottom border-secondary border-opacity-25">
+                <details class="footer-dropdown">
+                  <summary class="d-flex justify-content-between align-items-center py-3">
+                    <span>Genre</span>
+                    <i class="bi bi-chevron-down small"></i>
+                  </summary>
+                  <ul class="list-unstyled footer-links double-column pb-3">
+                    <li><a href="#">Aksi</a></li>
+                    <li><a href="#">Drama</a></li>
+                    <li><a href="#">Komedi</a></li>
+                    <li><a href="#">Sains & Fisika</a></li>
+                    <li><a href="#">Thriller</a></li>
+                    <li><a href="#">Romantis</a></li>
+                    <li><a href="#">Petualangan</a></li>
+                    <li><a href="#">Anime</a></li>
+                  </ul>
+                </details>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <div class="d-none d-md-block">
+                <h6 class="fw-bold mb-3">Bantuan</h6>
+                <ul class="list-unstyled footer-links">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Kontak Kami</a></li>
+                  <li><a href="#">Privasi</a></li>
+                  <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+              </div>
+
+              <div class="d-md-none border-bottom border-secondary border-opacity-25">
+                <details class="footer-dropdown">
+                  <summary class="d-flex justify-content-between align-items-center py-3">
+                    <span>Bantuan</span>
+                    <i class="bi bi-chevron-down small"></i>
+                  </summary>
+                  <ul class="list-unstyled footer-links double-column pb-3">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Kontak Kami</a></li>
+                    <li><a href="#">Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                  </ul>
+                </details>
+              </div>
             </div>
 
           </div>
         </div>
       </div>
-    </section>
-    <section class="content-section mt-5 px-4">
-      <h5 class="fw-bold mb-3">Melanjutkan Tonton Film</h5>
+    </div>
+  </footer>
+</body>
 
-      <div class="movie-rail">
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=4.png" alt="Fast X">
-            <div class="card-info">
-              <p class="movie-title">Fast X</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 2.9/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width:  60%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=24.png" alt="Spiderman-across the spider-verse">
-            <div class="card-info">
-              <p class="movie-title">Spiderman across the spider-verse</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 4.4/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=5.png" alt="Blue Lock">
-            <span class="badge-episode">Episode Baru</span>
-            <div class="card-info">
-              <p class="movie-title">Blue Lock</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 3.7/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=16.png" alt="Guardians of the Galaxy">
-            <div class="card-info">
-              <p class="movie-title">Guardians of the Galaxy</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 4.0/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=3.png" alt="Avatar the  way of water">
-            <div class="card-info">
-              <p class="movie-title">Avatar the way of water</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 3.8/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 60%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=21.png" alt="Jurassic World Dominion">
-            <div class="card-info">
-              <p class="movie-title">Jurassic World Dominion</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 2.8/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=23.png" alt="Sonic 2 the hedgehog">
-            <div class="card-info">
-              <p class="movie-title">Sonic 2 the hedgehog</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 3.5/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 30%;"></div>
-            </div>
-          </div>
-        </div>
-        <div class="movie-card">
-          <div class="card-thumb">
-            <img src="img/poster/landscape/Type=7.png" alt="the tomorrow war">
-            <div class="card-info">
-              <p class="movie-title">The Tomorrow War</p>
-              <div class="movie-rating">
-                <i class="bi bi-star-fill text-warning"></i> 3.2/5
-              </div>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" style="width: 30%;"></div>
-            </div>
-          </div>
-    </section>
-  </body>
 </html>
